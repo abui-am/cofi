@@ -1,12 +1,19 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      // put your font here
+      sans: ['Noto sans'],
+    },
+    extend: {
+      colors: {
+        // put your theme color here
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
-}
+};
